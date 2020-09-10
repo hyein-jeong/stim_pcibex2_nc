@@ -221,7 +221,7 @@ Template(GetTable("questionnaire.csv"),
             .log()
         ,
         newText("line8", qu.line8)
-            .after(getVar("Prolific_ID"))
+            .after(getTextInput("Prolific_ID"))
             .print() 
         ,
         newVar("ID")
