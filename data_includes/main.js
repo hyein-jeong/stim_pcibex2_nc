@@ -294,14 +294,14 @@ newTrial("instruct_1_1_day2_general",
 
 newTrial("instruct_1_2_day2_general",
     defaultText
-        .print()
+        .print()
     ,
     newImage("pic_instruct_1_general", "instruct_1_2_day2_general.png")
         .size(1280, 720)
         .print()
     ,
     newKey("space", " ")
-	.log()
+        .log()
         .wait()
 );
 
@@ -604,45 +604,45 @@ Template(GetTable("prac_cblock.csv"),
     newTrial("prac_cb",
     
     newImage("fixation_cross", "fixation.png")
-        .size(300, 300)
-        .print()
-        .log()
+        .size(300, 300)
+        .print()
+        .log()
     ,
     newTimer("prac_fixation", 500)
-        .start()
-        .wait()
+        .start()
+        .wait()
     ,
     getImage("fixation_cross")
-        .remove()
+        .remove()
     ,
     newMediaRecorder("prac_recorder", "audio")
-        .hidden()
-        .record()
-        .log()
+        .hidden()
+        .record()
+        .log()
     ,
     newImage("prac_picture", prac_cb.picture_file)
-        .size(300, 300)
-        .print()
+        .size(300, 300)
+        .print()
     ,
     newTimer("prac_trial", 2000)
-        .start()
-        .wait()
-        .log()
+        .start()
+        .wait()
+        .log()
     ,
     getImage("prac_picture")
-        .remove()
+        .remove()
     ,
     newTimer("post_trial", 1500)
-        .start()
-        .wait()
-        .log()
+        .start()
+        .wait()
+        .log()
     ,
     getMediaRecorder("prac_recorder")
-        .stop()
-        .remove()
-	.log()
+        .stop()
+        .remove()
+        .log()
     )
-    .log( "sub_id"     , getVar("ID")    )
+    .log( "sub_id" , getVar("ID")    )
     .log( "phrase_item", prac_cb.phrase_item )
     .log( "phrase_practice", prac_cb.phrase_practice)
     .log( "condition_exposure", prac_cb.condition_exposure)
