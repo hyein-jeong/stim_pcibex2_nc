@@ -227,6 +227,7 @@ Template(GetTable("questionnaire.csv"),
         newVar("ID")
             .global()
             .set(getTextInput("Prolific_ID") )
+            .log()
         ,
         newButton("qu_test_button", "Fortfahren in den Vollbildmodus.")
             .print()
