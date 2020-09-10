@@ -236,7 +236,7 @@ Template(GetTable("questionnaire.csv"),
                 )
             ,
             fullscreen()
-    ).log( "ID" , getVar("ID") );
+    ).log( "ID" , getVar("ID") )
 );
 
 
