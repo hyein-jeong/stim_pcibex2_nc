@@ -212,6 +212,10 @@ Template(GetTable("questionnaire.csv"),
             .print()
             .log()
         ,
+        newText("line3", qu.line3)
+            .after(getDropDown("Age"))
+            .print()
+        ,,
         newTextInput("Prolific_ID")
             .size(100, 20)
             .log()
