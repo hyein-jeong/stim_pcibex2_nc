@@ -642,7 +642,7 @@ Template(GetTable("prac_cblock.csv"),
         .remove()
         .log()
     )
-    .log( "sub_id" , getVar("ID")    )
+    .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", prac_cb.phrase_item )
     .log( "phrase_practice", prac_cb.phrase_practice)
     .log( "condition_exposure", prac_cb.condition_exposure)
