@@ -96,6 +96,11 @@ randomize("train6_ncb"),
 "preload_test_ncb",
 "instruct_9_2_ncblock_test",
 "test_ncb",
+"feedback",
+	 
+"instruct_1_1_day2_cognitivetask1",
+randomize ("category"),
+"cogtask_sample_fb",
 
 "send",
 "final");
@@ -601,6 +606,20 @@ newTrial("instruct_9_2_ncblock_test",
 	.log()
         .wait()
 );
+
+newTrial("instruct_1_1_day2_cognitivetask1",
+    defaultText
+        .print()
+    ,
+    newImage("pic_instruct_1_1_day2_cognitivetask1", "instruct_1_1_day2_cognitivetask1.png")
+        .size(1280, 720)
+        .print()
+    ,
+    newKey("space", " ")
+	.log()
+        .wait()
+);
+
 
 ////////////////////////////////////  templates for practice trials 
 
@@ -1442,6 +1461,73 @@ Template(GetTable("feedback.csv"),
                 .wait()
         )
 )
+
+
+newTrial("cogtask_sample_fb",
+      defaultText
+          .print()
+      ,
+      newText("<p> Wie schwierig war die Aufgabe zu erfüllen? </p>")
+          .print()
+      ,
+      newImage("bad", "bad.png")
+      ,
+      newImage("good", "good.png")
+      ,
+      newText("left label", "Bad")
+        .before( getImage("bad") )
+      ,
+      newText("right label", "Good")
+        .after( getImage("good") )
+      ,
+      newScale("judgment", 5)
+        .before( getText("left label") )
+        .after( getText("right label") )
+        .print()
+        .wait()
+        .log()
+);
+
+////template for category trial
+Template(GetTable("category.csv"),
+    ct =>
+    newTrial("category",
+        defaultText
+            .print()
+    ,
+    newMediaRecorder("category_recorder", "audio")
+        .hidden()
+        .record()
+        .log()   
+    ,
+    newText("category_name", ct .line1)
+        .css("background", "white")
+        .center()
+        .bold()
+        .settings.css("font-size", "26px")
+        .print()
+        .log()
+    ,
+    newTimer("category_trial", 50000)
+        .start()
+        .wait()
+        .log()
+    ,
+    getText("category_name")
+        .remove()
+    ,
+    newTimer("post_trial", 200)
+        .start()
+        .wait()
+        .log()
+    ,
+    getMediaRecorder("category_recorder")
+        .stop()
+        .remove()
+        .log()
+
+).log( "category", ct.line1 )
+);
 
 
 SendResults("send");
