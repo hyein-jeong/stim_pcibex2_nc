@@ -33,7 +33,7 @@ window.requestAnimationFrame( replaceUploadingMessage );
 
 // Show the 'intro' trial first, then all the 'experiment' trials in a random order
 // then send the results and finally show the trial labeled 'bye'
-
+DebugOff()
 
 Sequence("intro_ID",
 "consent_form",
