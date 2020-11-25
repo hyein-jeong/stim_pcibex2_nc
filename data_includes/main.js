@@ -1474,10 +1474,10 @@ newTrial("cogtask_sample_fb",
       ,
       newImage("good", "good.png")
       ,
-      newText("left label", "Bad")
+      newText("left label", "schwierig")
         .before( getImage("bad") )
       ,
-      newText("right label", "Good")
+      newText("right label", "einfach")
         .after( getImage("good") )
       ,
       newScale("judgment", 5)
