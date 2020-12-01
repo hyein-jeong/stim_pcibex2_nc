@@ -33,7 +33,7 @@ window.requestAnimationFrame( replaceUploadingMessage );
 
 // Show the 'intro' trial first, then all the 'experiment' trials in a random order
 // then send the results and finally show the trial labeled 'bye'
-DebugOff()
+//DebugOff()
 
 Sequence("intro_ID",
 "consent_form",
@@ -44,14 +44,14 @@ Sequence("intro_ID",
 "instruct_1_2_day2_general",
 "instruct_2_prac_cblock",
 "preload_prac_cb",
-"prac_cb",
+randomize("prac_cb"),
 "instruct_3_cblock_train1",
 "preload_ train1_cb ",
 randomize("train1_cb"),
 "instruct_4_pause_after_cblock_train1",	 
 "preload_prac_ncb",
 "instruct_5_prac_ncblock",
-"prac_ncb",
+randomize("prac_ncb"),
 "preload_train1_ncb",
 "instruct_6_ncblock_train1",
 randomize("train1_ncb"),
@@ -1374,6 +1374,7 @@ Template(GetTable("list1_test_cblock.csv"),
 	.log()  
     )
     .log( "sub_id"     , getVar("ID")    )
+    .log( "listNr" , test_cb.list)
     .log( "phrase_item", test_cb.phrase_item )
     .log( "phrase_test", test_cb.phrase_test )
     .log( "condition_exposure", test_cb.condition_exposure)
@@ -1424,6 +1425,7 @@ Template(GetTable("list1_test_ncblock.csv"),
 	.log()  
     )
     .log( "sub_id"     , getVar("ID")    )
+    .log( "listNr" , test_ncb.list)
     .log( "phrase_item", test_ncb.phrase_item )
     .log( "phrase_test", test_ncb.phrase_test )
     .log( "condition_exposure", test_ncb.condition_exposure)
