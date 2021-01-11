@@ -325,11 +325,37 @@ newTrial("instruct_1_2_day2_general",
         .wait()
 );
 
-newTrial("instruct_2_prac_cblock",
+newTrial("instruct_2_prac_ncblock",
     defaultText
         .print()
     ,
-    newImage("pic_instruct", "instruct_2_prac_cblock.png")
+    newImage("pic_instruct", "instruct_2_prac_ncblock.png")
+        .size(1280, 720)
+        .print()
+    ,
+    newKey("space", " ")
+	.log()
+        .wait()
+);
+
+newTrial("instruct_prac_ncblock_fb",
+    defaultText
+        .print()
+    ,
+    newImage("pic_instruct", "day1_instruction_prac_ncblock_ans.png")
+        .size(1280, 720)
+        .print()
+    ,
+    newKey("space", " ")
+	.log()
+        .wait()
+);
+
+newTrial("instruct_3_ncblock_train1",
+    defaultText
+        .print()
+    ,
+    newImage("pic_instruct", "instruct_3_ncblock_train1.png")
         .size(1280, 720)
         .print()
     ,
@@ -339,11 +365,11 @@ newTrial("instruct_2_prac_cblock",
 );
 
 
-newTrial("instruct_3_cblock_train1",
+newTrial("instruct_4_pause_after_ncblock_train1",
     defaultText
         .print()
     ,
-    newImage("pic_instruct", "instruct_3_cblock_train1.png")
+    newImage("pic_instruct", "instruct_4_pause_after_ncblock_train1.png")
         .size(1280, 720)
         .print()
     ,
@@ -353,11 +379,11 @@ newTrial("instruct_3_cblock_train1",
 );
 
 
-newTrial("instruct_4_pause_after_cblock_train1",
+newTrial("instruct_5_prac_cblock",
     defaultText
         .print()
     ,
-    newImage("pic_instruct", "instruct_4_pause_after_cblock_train1.png")
+    newImage("pic_instruct", "instruct_5_prac_cblock.png")
         .size(1280, 720)
         .print()
     ,
@@ -366,12 +392,24 @@ newTrial("instruct_4_pause_after_cblock_train1",
         .wait()
 );
 
+newTrial("instruct_prac_cblock_fb",
+    defaultText
+        .print()
+    ,
+    newImage("pic_instruct", "day1_instruction_prac_cblock_ans.png")
+        .size(1280, 720)
+        .print()
+    ,
+    newKey("space", " ")
+	.log()
+        .wait()
+);
 
-newTrial("instruct_5_prac_ncblock",
+newTrial("instruct_6_cblock_train1",
     defaultText
         .print()
     ,
-    newImage("pic_instruct", "instruct_5_prac_ncblock.png")
+    newImage("pic_instruct", "instruct_6_cblock_train1.png")
         .size(1280, 720)
         .print()
     ,
@@ -380,25 +418,11 @@ newTrial("instruct_5_prac_ncblock",
         .wait()
 );
 
-
-newTrial("instruct_6_ncblock_train1",
+newTrial("instruct_7_pause_after_cblock_train1",
     defaultText
         .print()
     ,
-    newImage("pic_instruct", "instruct_6_ncblock_train1.png")
-        .size(1280, 720)
-        .print()
-    ,
-    newKey("space", " ")
-	.log()
-        .wait()
-);
-
-newTrial("instruct_7_pause_after_ncblock_train1",
-    defaultText
-        .print()
-    ,
-    newImage("pic_instruct", "instruct_7_pause_after_ncblock_train1.png")
+    newImage("pic_instruct", "instruct_7_pause_after_cblock_train1.png")
         .size(1280, 720)
         .print()
     ,
@@ -433,11 +457,11 @@ newTrial("instruct_8_2_ncblock_train2",
         .wait()
 );
 
-newTrial("instruct_8_2_pause_after_ncblock_train2",
+newTrial("instruct_8_2_pause_after_cblock_train2",
     defaultText
         .print()
     ,
-    newImage("pic_instruct", "instruct_8_2_pause_after_ncblock_train2.png")
+    newImage("pic_instruct", "instruct_8_2_pause_after_cblock_train2.png")
         .size(1280, 720)
         .print()
     ,
@@ -499,11 +523,11 @@ newTrial("instruct_8_4_ncblock_train4",
         .wait()
 );
 
-newTrial("instruct_8_4_pause_after_ncblock_train4",
+newTrial("instruct_8_4_pause_after_cblock_train4",
     defaultText
         .print()
     ,
-    newImage("pic_instruct", "instruct_8_4_pause_after_ncblock_train4.png")
+    newImage("pic_instruct", "instruct_8_4_pause_after_cblock_train4.png")
         .size(1280, 720)
         .print()
     ,
@@ -565,11 +589,11 @@ newTrial("instruct_8_6_ncblock_train6",
         .wait()
 );
 
-newTrial("instruct_8_6_pause_after_ncblock_train6",
+newTrial("instruct_8_6_pause_after_cblock_train6",
     defaultText
         .print()
     ,
-    newImage("pic_instruct", "instruct_8_6_pause_after_ncblock_train6.png")
+    newImage("pic_instruct", "instruct_8_6_pause_after_cblock_train6.png")
         .size(1280, 720)
         .print()
     ,
@@ -578,11 +602,11 @@ newTrial("instruct_8_6_pause_after_ncblock_train6",
         .wait()
 );
 
-newTrial("instruct_9_0_general_test",
+newTrial("instruct_9_0_general_test_nc",
     defaultText
         .print()
     ,
-    newImage("pic_instruct", "instruct_9_0_general_test.png")
+    newImage("pic_instruct", "instruct_9_0_general_test_nc.png")
         .size(1280, 720)
         .print()
     ,
@@ -591,11 +615,11 @@ newTrial("instruct_9_0_general_test",
         .wait()
 );
 
-newTrial("instruct_9_1_cblock_test",
+newTrial("instruct_9_1_ncblock_test",
     defaultText
         .print()
     ,
-    newImage("pic_instruct", "instruct_9_1_cblock_test.png")
+    newImage("pic_instruct", "instruct_9_1_ncblock_test.png")
         .size(1280, 720)
         .print()
     ,
@@ -604,11 +628,11 @@ newTrial("instruct_9_1_cblock_test",
         .wait()
 );
 
-newTrial("instruct_9_2_ncblock_test",
+newTrial("instruct_9_2_cblock_test",
     defaultText
         .print()
     ,
-    newImage("pic_instruct", "instruct_9_2_ncblock_test.png")
+    newImage("pic_instruct", "instruct_9_2_cblock_test.png")
         .size(1280, 720)
         .print()
     ,
@@ -676,7 +700,6 @@ Template(GetTable("prac_cblock.csv"),
         .remove()
         .log()
     )
-    .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", prac_cb.phrase_item )
     .log( "phrase_practice", prac_cb.phrase_practice)
     .log( "condition_exposure", prac_cb.condition_exposure)
@@ -726,7 +749,6 @@ Template(GetTable("prac_ncblock.csv"),
         .remove()
 	.log()
     )
-    .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", prac_ncb.phrase_item )
     .log( "phrase_practice", prac_ncb.phrase_practice)
     .log( "condition_exposure", prac_ncb.condition_exposure)
@@ -779,7 +801,6 @@ Template(GetTable("list1_train1_cblock.csv"),
         .remove()
 	.log() 
     )
-    .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", train1_cb.phrase_item )
     .log( "phrase_train1", train1_cb.phrase_train1)
     .log( "condition_exposure", train1_cb.condition_exposure)
@@ -829,7 +850,6 @@ Template(GetTable("list1_train1_ncblock.csv"),
         .remove()
 	.log()
     )
-    .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", train1_ncb.phrase_item )
     .log( "phrase_train1", train1_ncb.phrase_train1)
     .log( "condition_exposure", train1_ncb.condition_exposure)
@@ -880,7 +900,6 @@ Template(GetTable("list1_train2_cblock.csv"),
         .remove()
 	.log()    
     )
-    .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", train2_cb.phrase_item)
     .log( "phrase_train2", train2_cb.phrase_train2)
     .log( "condition_exposure", train2_cb.condition_exposure)
@@ -930,7 +949,6 @@ Template(GetTable("list1_train2_ncblock.csv"),
         .remove()
 	.log()  
     )
-    .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", train2_ncb.phrase_item )
     .log( "phrase_train2", train2_ncb.phrase_train2)
     .log( "condition_exposure", train2_ncb.condition_exposure)
@@ -980,7 +998,6 @@ Template(GetTable("list1_train3_cblock.csv"),
         .remove()
 	.log()  
     )
-    .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", train3_cb.phrase_item)
     .log( "phrase_train3", train3_cb.phrase_train3)
     .log( "condition_exposure", train3_cb.condition_exposure)
@@ -1030,7 +1047,6 @@ Template(GetTable("list1_train3_ncblock.csv"),
         .remove()
 	.log()  
     )
-    .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", train3_ncb.phrase_item )
     .log( "phrase_train3", train3_ncb.phrase_train3)
     .log( "condition_exposure", train3_ncb.condition_exposure)
@@ -1080,7 +1096,6 @@ Template(GetTable("list1_train4_cblock.csv"),
         .remove()
 	.log()  
     )
-    .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", train4_cb.phrase_item)
     .log( "phrase_train4", train4_cb.phrase_train4)
     .log( "condition_exposure", train4_cb.condition_exposure)
@@ -1130,7 +1145,6 @@ Template(GetTable("list1_train4_ncblock.csv"),
         .remove()
 	.log()       
     )
-    .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", train4_ncb.phrase_item )
     .log( "phrase_train4", train4_ncb.phrase_train4)
     .log( "condition_exposure", train4_ncb.condition_exposure)
@@ -1180,7 +1194,6 @@ Template(GetTable("list1_train5_cblock.csv"),
         .remove()
 	.log()   
     )
-    .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", train5_cb.phrase_item)
     .log( "phrase_train5", train5_cb.phrase_train5)
     .log( "condition_exposure", train5_cb.condition_exposure)
@@ -1230,7 +1243,6 @@ Template(GetTable("list1_train5_ncblock.csv"),
         .remove()
 	.log()   
     )
-    .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", train5_ncb.phrase_item )
     .log( "phrase_train5", train5_ncb.phrase_train5)
     .log( "condition_exposure", train5_ncb.condition_exposure)
@@ -1280,7 +1292,6 @@ Template(GetTable("list1_train6_cblock.csv"),
         .remove()
 	.log()   
     )
-    .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", train6_cb.phrase_item)
     .log( "phrase_train6", train6_cb.phrase_train6)
     .log( "condition_exposure", train6_cb.condition_exposure)
@@ -1330,7 +1341,6 @@ Template(GetTable("list1_train6_ncblock.csv"),
         .remove()
 	.log()  
     )
-    .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", train6_ncb.phrase_item )
     .log( "phrase_train6", train6_ncb.phrase_train6)
     .log( "condition_exposure", train6_ncb.condition_exposure)
@@ -1383,7 +1393,6 @@ Template(GetTable("list1_test_cblock.csv"),
         .remove()
 	.log()  
     )
-    .log( "sub_id"     , getVar("ID")    )
     .log( "listNr" , test_cb.list)
     .log( "phrase_item", test_cb.phrase_item )
     .log( "phrase_test", test_cb.phrase_test )
@@ -1434,7 +1443,6 @@ Template(GetTable("list1_test_ncblock.csv"),
         .remove()
 	.log()  
     )
-    .log( "sub_id"     , getVar("ID")    )
     .log( "listNr" , test_ncb.list)
     .log( "phrase_item", test_ncb.phrase_item )
     .log( "phrase_test", test_ncb.phrase_test )
