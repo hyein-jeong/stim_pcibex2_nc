@@ -342,7 +342,7 @@ newTrial("instruct_prac_ncblock_fb",
     defaultText
         .print()
     ,
-    newImage("pic_instruct", "day1_instruction_prac_ncblock_ans.png")
+    newImage("pic_instruct", "day2_instruction_prac_ncblock_ans.png")
         .size(1280, 720)
         .print()
     ,
@@ -396,7 +396,7 @@ newTrial("instruct_prac_cblock_fb",
     defaultText
         .print()
     ,
-    newImage("pic_instruct", "day1_instruction_prac_cblock_ans.png")
+    newImage("pic_instruct", "day2_instruction_prac_cblock_ans.png")
         .size(1280, 720)
         .print()
     ,
